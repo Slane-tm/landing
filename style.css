@@ -104,12 +104,12 @@ header > .wrapper-inner {
     align-items: center;
     margin-left: 73px;
 }
-.nav-item {
+.nav-item a {
     color: #697CA6;
     font-size: 12px;
     transition: .2s;
 }
-.nav-item:hover {
+.nav-item:hover a {
     color: #5E81FE;
     font-weight: 700;
 }
@@ -280,6 +280,7 @@ header > .wrapper-inner {
     justify-content: center;
     text-align: center;
     font-weight: 500;
+    cursor: pointer;
 }
 .plan-and-manage-img {
     position: absolute;
@@ -420,6 +421,9 @@ header > .wrapper-inner {
 }
 .blog-cards {
     margin-top: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .blog-card {
     background-color: #fff;
@@ -429,7 +433,6 @@ header > .wrapper-inner {
     align-items: center;
     justify-content: center;
     max-width: 980px;
-    margin: 0 auto;
 }
 .blog-card-content {
     flex-basis: 50%;
@@ -451,26 +454,61 @@ header > .wrapper-inner {
     grid-template-columns: repeat(3, 140px);
     grid-template-rows: repeat(2, 140px);
     margin-right: 30px;
+    box-shadow: 0 4px 4px 0 25%;
 }
 .big-image {
     grid-row: 1/3;
     grid-column: 1/3;
-    background-image: linear-gradient(#FFC73570);
+    background-image: url(img/blog/01.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .small-image-1 {
     grid-row: 1/1;
     grid-column: 3/3;
+    background-image: url(img/blog/02.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .small-image-2 {
     grid-row: 2/2;
     grid-column: 3/3;
-}
-.blog-card-image {
-    position: relative;
+    background-image: url(img/blog/03.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .loup {
-    position: absolute;
-    top: 0;
-    left: 0;
-    align-self: center;
+    width: 0;
+    height: 0;
+    transition: .2s;
+}
+.blog-card-image:hover .loup  {
+    width: 65px;
+    height: 65px;
+}
+.blog-card-arrow-right {
+    margin-left: 75px;
+    box-sizing: content-box;
+    padding-right: 15px;
+}
+.blog-card-arrow-left {
+    margin-right: 75px;
+    box-sizing: content-box;
+    padding-left: 15px;
+}
+.blog .dots {
+    display: inline-block;
+    margin: 101px auto 0 auto;
 }
