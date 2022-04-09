@@ -124,6 +124,9 @@
     }
 }
 @media(max-width: 550px){
+    .accordeon-item-content {
+        padding: 16px 15px 53px 30px;
+    }
     .blog .dots {
         margin-top: 40px;
     }
@@ -188,6 +191,12 @@
     }
 }
 @media(max-width: 500px){
+    .accordeon-item-content {
+        display: block;
+    }
+    .accordeon-item-content > *:not(:last-child) {
+        margin-bottom: 20px;
+    }
     .faq {
         padding: 70px 0;
     }
