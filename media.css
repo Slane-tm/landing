@@ -84,6 +84,9 @@
     }
 }
 @media(max-width: 950px){
+    .copyright {
+        margin: 0;
+    }
     .features-list {
         display: flex;
         align-items: flex-start;
