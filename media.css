@@ -113,9 +113,19 @@
     }
 }
 @media(max-width: 820px){
+    .blog-cards {
+        position: relative;
+    }
     .blog-card-arrow-left,
     .blog-card-arrow-right {
-        display: none;
+        position: absolute;
+        bottom: -90px;
+    }
+    .blog-card-arrow-left {
+        right: 50%;
+    }
+    .blog-card-arrow-right {
+        left: 50%;
     }
 }
 @media(max-width: 380px){
@@ -126,9 +136,6 @@
 @media(max-width: 550px){
     .accordeon-item-content {
         padding: 16px 15px 53px 30px;
-    }
-    .blog .dots {
-        margin-top: 40px;
     }
     .blog-cards {
         margin-top: 50px;

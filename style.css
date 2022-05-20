@@ -46,6 +46,9 @@ body {
 .ta-c {
     text-align: center;
 }
+.hidden {
+    opacity: 0;
+}
 .text {
     margin-top: 28px;
     line-height: 2;
@@ -145,6 +148,9 @@ body {
 }
 .h-f-btn {
     margin-left: 44px;
+}
+.dark {
+    background-color: rgb(228, 228, 228);;
 }
 .skyblue-btn {
     transition: .2s;
@@ -443,9 +449,15 @@ body {
     border: 1px solid #D8E3FE;
     padding: 60px 40px;
     max-width: 980px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
+    opacity: 0;
+    transition: all 1s linear;
+}
+.blog-card-active {
+    display: flex;
+    opacity: 1;
 }
 .blog-card-content {
     flex-basis: 50%;
@@ -510,16 +522,18 @@ body {
     height: 65px;
 }
 .blog-card-arrow-right {
-    margin-left: 75px;
+    margin-left: 60px;
+    padding: 15px 15px;
     box-sizing: content-box;
-    padding-right: 15px;
     cursor: pointer;
+    transition: .2s;
 }
 .blog-card-arrow-left {
-    margin-right: 75px;
+    margin-right: 60px;
+    padding: 15px 15px;
     box-sizing: content-box;
-    padding-left: 15px;
     cursor: pointer;
+    transition: .2s;
 }
 .blog .dots {
    margin-top: 101px;
